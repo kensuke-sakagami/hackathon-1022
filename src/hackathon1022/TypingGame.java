@@ -82,7 +82,7 @@ public class TypingGame {
 	static final String GAME9ENG = "sebunirebunnnoagemonoumasugi";
 
 	static final String GAME10 = "このゲーム の さくせいしゃ は サカガミケンスケ (がみけん) です";
-	static final String GAME10ENG = "konoge-musakuseisyahasakagamikensuke(gamiken)desu";
+	static final String GAME10ENG = "konoge-munosakuseisyahasakagamikensuke(gamiken)desu";
 
 
 
@@ -93,7 +93,6 @@ public class TypingGame {
 		if (value.equals(GAMEENG) ) {
 			corectCount += 1;
 			System.out.println("正解！！");
-
 		}else {
 			mistakeCount += 1;
 			mistakeList.add(GAME);
