@@ -20,9 +20,8 @@ public class make123Hackathon {
 		System.out.println("指定入力値以外を入力すると1になります");
 		makeArr();
 
-		//スタートの入力
 		Scanner scanner = new Scanner(System.in);
-
+		
 		boolean jud = true;
 
 		//多次元配列の表示
