@@ -3,8 +3,6 @@ package hackathon1022;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class TypingGame {
 	static int corectCount = 0;

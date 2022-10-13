@@ -14,9 +14,9 @@ public class BlackbeardCloseCall {
 		Random rnd = new Random();
 		int answerNum = rnd.nextInt(24);
 		System.out.println(answerNum);
-		
-		
-		for (int i=0;i<40;) {
+
+
+		for (int i=0;i<24;) {
 			//sccanerNumの初期化
 			sccanerNum = 0;
 			Scanner scanner = new Scanner(System.in);
@@ -25,14 +25,8 @@ public class BlackbeardCloseCall {
 			System.out.println("1から24の数値を入力してください:");
 			sccanerNum = scanner.nextInt();
 
-			//入力された値と黒髭の値が同じな場合
-			if (sccanerNum == answerNum) {
-				System.out.println("あたり！！");
-				System.out.println((i+1)+"回目で当たりました");
-				break;
-
-				//25以上or0以下の数値を入力された場合
-			}else if(sccanerNum > 25 || sccanerNum < 1) {
+			//25以上or0以下の数値を入力された場合
+			if(sccanerNum > 25 || sccanerNum < 1) {
 				System.out.println(Arrays.toString(answerArr));
 				System.out.println("1から24の数値を指定してください");
 				continue;
@@ -41,6 +35,13 @@ public class BlackbeardCloseCall {
 				System.out.println(Arrays.toString(answerArr));
 				System.out.println("すでに指定された値です。もう一度打ち込んでください。");
 				continue;
+			}
+
+			//入力された値と黒髭の値が同じな場合
+			if (sccanerNum == answerNum) {
+				System.out.println("あたり！！");
+				System.out.println((i+1)+"回目で当たりました");
+				break;
 				//ハズレの値を入力された場合;
 			}else {
 				System.out.println("もう一回");
@@ -48,6 +49,7 @@ public class BlackbeardCloseCall {
 				answerArr[sccanerNum-1] = 0;
 				System.out.println(Arrays.toString(answerArr));
 				i++;
+				System.out.println("残り " +(24-i)+" 穴");
 				continue;
 			}
 		}
