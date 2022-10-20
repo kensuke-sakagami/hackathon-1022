@@ -15,11 +15,11 @@ public class BlackbeardCloseCall {
 		int answerNum = rnd.nextInt(24);
 		System.out.println(answerNum);
 
+		Scanner scanner = new Scanner(System.in);
 
 		for (int i=0;i<24;) {
 			//sccanerNumの初期化
 			sccanerNum = 0;
-			Scanner scanner = new Scanner(System.in);
 
 			//コンソールから数値受け取り
 			System.out.println("1から24の数値を入力してください:");
@@ -53,6 +53,8 @@ public class BlackbeardCloseCall {
 				continue;
 			}
 		}
+		
+		scanner.close();
 	}
 
 	//40個(黒髭の穴)を作る処理

@@ -105,6 +105,7 @@ public class make123Hackathon {
 			System.out.println(Arrays.toString(make123Arr[2]));
 			System.out.println("----------------------------------");
 		}
+		scanner.close();
 	}
 
 	//ランダムな配列を作る処理

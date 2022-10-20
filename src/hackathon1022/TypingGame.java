@@ -14,7 +14,7 @@ public class TypingGame {
 
 	public static void main(String[] args) {
 		System.out.println("タイピングゲーム");
-		System.out.println("ボタンを押すと始まります");
+		System.out.println("文字を入力しエンターボタンを押すとスタートします");
 
 		//Listに文字列の追加
 		setgameValueList();
@@ -51,6 +51,7 @@ public class TypingGame {
 			}
 			System.out.println("------------------------------");
 		}
+		scanner.close();
 	}	
 	static final String GAME1 = "こんばんは";
 	static final String GAME1ENG = "konbanha";
@@ -122,5 +123,5 @@ public class TypingGame {
 		gameValueEngList.add(GAME9ENG);
 		gameValueEngList.add(GAME10ENG);
 	}
-
+	
 }
